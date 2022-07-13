@@ -1,0 +1,12 @@
+Build and Run Config Server Project
+Open command prompt from spring-config-server folder and run mvn clean install command. Once build is completed run the application from that command prompt itself by java -jar command like java -jar target\spring-config-server-0.0.1-SNAPSHOT.jar.
+
+This will start the config server service in 8888 port in the localhost.
+
+Build and Run Config Client Project
+Similarly, Open command prompt from spring-config-client folder and run mvn clean install command. Once build is completed run the application from that command prompt itself by java -jar command like java -jar target\spring-config-client-0.0.1-SNAPSHOT.jar.
+
+This will start the Config Client service in 8080 port of localhost.
+
+Test REST Endpoint
+Now in the browser open the /msg rest endpoint by browsing the url http://localhost:8080/msg. It should return Hello world - this is from config server which is mentioned in the config-server-client-development.properties file.
